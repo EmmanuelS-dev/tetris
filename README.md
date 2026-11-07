@@ -1,10 +1,15 @@
-# Tetris implementations
+# Tetris project and developer portfolio
 
-This repository contains independent language editions of the same Tetris rules. Each implementation keeps its sources, dependencies, build or run instructions, and tests in its own top-level directory.
+This repository contains four independent implementations of Tetris and a React portfolio website. Each game keeps its code and instructions inside its own language folder; the portfolio is separate in [`web/`](web/).
 
-- [`C/`](C/README.md) — C11 with Raylib, neon retro arcade presentation.
-- [`Python/`](Python/README.md) — Python with Pygame, minimalist presentation.
-- [`JavaScript/`](JavaScript/README.md) — browser edition with Canvas rendering.
-- [`Java/`](Java/README.md) — desktop edition using Java Swing.
+## Projects
 
-The implementations share board dimensions, tetrominoes, seven-bag generation, SRS rotation kicks, hold and preview, scoring, and level progression. Runtime dependencies remain independent.
+- [`C/`](C/README.md) — C11 and Raylib desktop game.
+- [`Python/`](Python/README.md) — Python and Pygame desktop game.
+- [`JavaScript/`](JavaScript/README.md) — JavaScript Canvas browser game.
+- [`Java/`](Java/README.md) — Java Swing desktop game.
+- [`web/`](web/README.md) — React developer portfolio, About page, and Other Works page.
+
+## Documentation
+
+See [`documentation.md`](documentation.md) for the repository layout, shared game rules, and build, run, test, and deployment commands.
