@@ -13,7 +13,7 @@ Raylib 5.5 is fetched by CMake when no installed Raylib package is found. No aud
 
 ## Build and run
 
-From this directory:
+From the `C/` directory:
 
 ```powershell
 cmake -S . -B build
@@ -29,19 +29,19 @@ cmake -S . -B build -G "MinGW Makefiles" `
 cmake --build build --parallel
 ```
 
-In the inspected workspace, CMake and GCC are bundled with Code::Blocks. These commands build the Raylib executable and headless tests with those exact tools:
+In this workspace, CMake and GCC are bundled with Code::Blocks. From the repository root, these commands build the Raylib executable and headless tests with those exact tools:
 
 ```powershell
-& 'C:\Program Files\CodeBlocks\MinGW\bin\cmake.exe' -S . -B build-raylib -G 'MinGW Makefiles' `
+& 'C:\Program Files\CodeBlocks\MinGW\bin\cmake.exe' -S C -B C/build-raylib -G 'MinGW Makefiles' `
   '-DCMAKE_C_COMPILER=C:/Program Files/CodeBlocks/MinGW/bin/gcc.exe' `
   '-DCMAKE_MAKE_PROGRAM=C:/Program Files/CodeBlocks/MinGW/bin/mingw32-make.exe' `
   -DTETRIS_FETCH_RAYLIB=ON -DTETRIS_BUILD_TESTS=ON
-& 'C:\Program Files\CodeBlocks\MinGW\bin\cmake.exe' --build build-raylib --parallel
-& 'C:\Program Files\CodeBlocks\MinGW\bin\ctest.exe' --test-dir build-raylib --output-on-failure
-& '.\build-raylib\c_tetris.exe'
+& 'C:\Program Files\CodeBlocks\MinGW\bin\cmake.exe' --build C/build-raylib --parallel
+& 'C:\Program Files\CodeBlocks\MinGW\bin\ctest.exe' --test-dir C/build-raylib --output-on-failure
+& '.\C\build-raylib\c_tetris.exe'
 ```
 
-Run `build/c_tetris.exe` on Windows, or `./build/c_tetris` on Linux/macOS. If Raylib is already installed and CMake can locate it, no network is needed. To disable the automatic fetch and build only the core tests, pass `-DTETRIS_FETCH_RAYLIB=OFF`.
+Run `build/c_tetris.exe` on Windows, or `./build/c_tetris` on Linux/macOS when building from inside `C/`. If Raylib is already installed and CMake can locate it, no network is needed. To disable the automatic fetch and build only the core tests, pass `-DTETRIS_FETCH_RAYLIB=OFF`.
 
 ### Install the toolchain on Windows
 
@@ -83,7 +83,7 @@ The high score is stored as a small text file in `%APPDATA%/C-Tetris/highscore.t
 
 ## Tests
 
-The gameplay tests have no graphics or audio dependency:
+The gameplay tests have no graphics or audio dependency. Run these commands from inside `C/`:
 
 ```powershell
 cmake -S . -B build -DTETRIS_FETCH_RAYLIB=OFF -DTETRIS_BUILD_TESTS=ON

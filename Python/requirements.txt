@@ -1,0 +1,5 @@
+# Pygame 2.6.1 provides CPython 3.13 wheels. For Python 3.14, use the
+# compatible Pygame Community Edition package (same `import pygame` API).
+pygame>=2.6.1,<3; python_version < "3.14"
+pygame-ce>=2.5.8,<3; python_version >= "3.14"
+pytest>=8,<10
