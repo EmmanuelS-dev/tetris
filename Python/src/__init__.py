@@ -1,0 +1,1 @@
+"""Minimalist Pygame Tetris."""

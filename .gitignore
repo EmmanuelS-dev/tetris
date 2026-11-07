@@ -1,6 +1,4 @@
-/build*/
-*.exe
-*.obj
-*.o
-*.a
-/highscore.txt
+/C/build*/
+/Python/.venv/
+/Python/.pytest_cache/
+/Python/**/__pycache__/
