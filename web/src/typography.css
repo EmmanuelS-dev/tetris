@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+
+:root{font-family:'Geist','Segoe UI',Arial,sans-serif;--mono:'Geist','Segoe UI',Arial,sans-serif;--serif:'Geist','Segoe UI',Arial,sans-serif}body,button,input,textarea,select{font-family:'Geist','Segoe UI',Arial,sans-serif}.brand b.brand-game{font-family:'Geist','Segoe UI',Arial,sans-serif}
+.project-card p,.featured-tetris p,.works-tetris p,.story p,.lead,.home-note p{font-size:17px;line-height:1.65}
+.project-card h3,.featured-tetris h3{font-size:21px}
+.story h2,.section-head h2,.social h2,.works-tetris h2,.closing h2,.game-toolbar h2{font-size:28px}
+@media(max-width:560px){.game-toolbar h2{font-size:28px}.story p,.project-card p,.works-tetris p{font-size:17px}}

@@ -1,6 +1,6 @@
 # Tetris project and developer portfolio
 
-This repository contains four independent implementations of Tetris and a React portfolio website. Each game keeps its code and instructions inside its own language folder; the portfolio is separate in [`web/`](web/).
+This repository contains four independent implementations of Tetris and a React Tetris website. Each game keeps its code and instructions inside its own language folder; the website is separate in [`web/`](web/).
 
 ## Projects
 
@@ -8,7 +8,7 @@ This repository contains four independent implementations of Tetris and a React 
 - [`Python/`](Python/README.md) — Python and Pygame desktop game.
 - [`JavaScript/`](JavaScript/README.md) — JavaScript Canvas browser game.
 - [`Java/`](Java/README.md) — Java Swing desktop game.
-- [`web/`](web/README.md) — React developer portfolio, About page, and Other Works page.
+- [`web/`](web/README.md) — React Tetris website with a playable Home page, plus About and Other Works pages.
 
 ## Documentation
 
